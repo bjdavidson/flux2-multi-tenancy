@@ -278,7 +278,7 @@ service account in the tenant namespace when applying changes to the cluster. Th
 exist in all namespaces and should always be kept without any privileges.
 
 To enable a tenant to operate, a service account must be created with the required permissions and its name set 
-to the `spec.serviceAccountName` of all `Kustomize` and `HelmRelease` the tenant has.
+to the `spec.serviceAccountName` of all `Kustomization` and `HelmRelease` resources the tenant has.
 
 ### Tenancy policies
 
@@ -598,4 +598,4 @@ This repository contains the following GitHub CI workflows:
 
 
 [Flux v0.26]: https://github.com/fluxcd/flux2/releases/tag/v0.26.0
-[multi-tenancy lockdown]: https://fluxcd.io/docs/installation/#multi-tenancy-lockdown
+[multi-tenancy lockdown]: https://fluxcd.io/flux/installation/#multi-tenancy-lockdown
